@@ -1,3 +1,4 @@
+# Remember all the file paths and column names are according to my according to my names and paths that I put into them
 import requests
 import pandas as pd
 from datetime import datetime
@@ -7,7 +8,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from requests.exceptions import RequestException, Timeout
 
 # Setup
-TMDB_API_KEY = "add_yours"
+TMDB_API_KEY = "add_yours" #I hide my API from here if any who download this script and want to run he/she have to create new API key and put that in here
 BASE_URL = "https://api.themoviedb.org/3"
 MAX_YEAR = 2010
 TODAY = datetime.today().date()
@@ -130,7 +131,7 @@ def get_average_imdb_rating(actor_name):
     return avg_rating
 
 # Load Dataset
-file_path = "actors_input.xlsx"
+file_path = "actors_input.xlsx" 
 df = pd.read_excel(file_path)
 
 first_avg = [None] * len(df)
