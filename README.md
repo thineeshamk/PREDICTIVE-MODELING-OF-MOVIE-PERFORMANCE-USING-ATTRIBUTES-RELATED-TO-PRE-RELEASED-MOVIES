@@ -7,7 +7,7 @@
 
 ---
 
-## 📖 Project Overview
+## Project Overview
 
 The global film industry is a high-stakes environment where multi-million dollar investments are often made based on intuition rather than data. Commercial success is notoriously unpredictable.
 
@@ -15,7 +15,7 @@ This project bridges the gap between storytelling and data science. It is a syst
 
 It combines structured metadata (cast, budget, genre) with unstructured narrative analysis (plot embeddings via Longformer) to provide evidence-based decision support for producers and investors.
 
-## 🎯 Aim & Objectives
+## Aim & Objectives
 
 **Aim:** To develop a robust, methodologically sound predictive framework for forecasting film success and providing content-based recommendations.
 
@@ -25,13 +25,13 @@ It combines structured metadata (cast, budget, genre) with unstructured narrativ
 3.  **Hybrid Modeling:** Integrate metadata with deep narrative analysis using NLP (Longformer).
 4.  **Decision Support:** Deploy a web-based recommendation engine.
 
-## 💡 Novelty
+## Novelty
 
 * **Time-Aware Talent Metrics:** Instead of using a static career average for an actor, this model calculates their average rating dynamically based on their filmography *prior* to the target movie year.
 * **Narrative Embeddings:** Utilizes the **Longformer** model (handling up to 4096 tokens) to generate embeddings for full plot summaries, capturing semantic nuances missed by standard BERT models.
 * **RAG Recommendation Engine:** Integrates a FAISS vector database with LLMs (Groq) to provide actionable advice based on similar historical movies.
 
-## 📊 Models & Results
+## Models & Results
 
 To achieve optimal performance, four distinct model architectures were built and evaluated:
 
@@ -52,7 +52,7 @@ The **Regularized Stacking Classifier** was the best performing model.
 
 ---
 
-## ⚙️ Technical Setup
+## Technical Setup
 
 ### Prerequisites
 - Windows 10/11
